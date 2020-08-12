@@ -1,0 +1,19 @@
+title: Keno Blog
+email: keno.frianeza@gmail.com
+description: Keno's blog
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

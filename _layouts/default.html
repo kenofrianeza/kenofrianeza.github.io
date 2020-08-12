@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link href="{{ 'assets/css/style.css' | relative_url }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        {% feed_meta %}
+        {% seo %}
+    </head>
+    <body>
+        <h1 class="blogtitle"><a href="/">KENO'S DESK</a></h1>
+        <h2 class="navtitle">{% include navigation.html %}</h2>
+        <div class="bodytext-container">
+            <div class="bodytext">{{ content | markdownify}}</div>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>
