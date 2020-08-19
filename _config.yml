@@ -1,6 +1,7 @@
 title: Keno Blog
 email: keno.frianeza@gmail.com
 description: Keno's blog
+baseurl: '/kenofrianeza.github.io'
 
 defaults:
   - scope:
